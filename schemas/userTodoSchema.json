@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "todo_id",
+        "title",
+        "short_description",
+        "location_description"
+    ],
+    "properties": {
+        "todo_id": {
+            "title": "The todo_id Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "B97CE4CE-B1E4-44E5-92F5-AD9183785FC"
+            ]
+        },
+        "title": {
+            "title": "The title Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Garnet Hill Trail"
+            ]
+        },
+        "short_description": {
+            "title": "The short_description Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Follow a stagecoach route on a meadow journey arou…l washout refer to Backcountry Conditions report."
+            ]
+        },
+        "location_description": {
+            "title": "The location_description Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "This trail is located in the northern part of the park near Tower Junction."
+            ]
+        }
+    },
+    "examples": [{
+        "todo_id": "B97CE4CE-B1E4-44E5-92F5-AD9183785FC",
+        "title": "Garnet Hill Trail",
+        "short_description": "Follow a stagecoach route on a meadow journey arou…l washout refer to Backcountry Conditions report.",
+        "location_description": "This trail is located in the northern part of the park near Tower Junction."
+    }]
+}

@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "event_id",
+        "title",
+        "description",
+        "date"
+    ],
+    "properties": {
+        "event_id": {
+            "title": "The event_id Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "820C480F-E335-59C3-1B33274EF1DA269A"
+            ]
+        },
+        "title": {
+            "title": "The title Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Calling in the Cavalry"
+            ]
+        },
+        "description": {
+            "title": "The description Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "In its early days, Yellowstone National Park was protected by the US Army. Learn about important historic park events and discover the role of the U.S. military in protecting Yellowstone on this short, relaxed walk around Fort Yellowstone. For all ages. Accessible.\nMeet in front of Albright Visitor Center."
+            ]
+        },
+        "date": {
+            "title": "The date Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "2024-07-27"
+            ]
+        }
+    },
+    "examples": [{
+        "event_id": "820C480F-E335-59C3-1B33274EF1DA269A",
+        "title": "Calling in the Cavalry",
+        "description": "In its early days, Yellowstone National Park was protected by the US Army. Learn about important historic park events and discover the role of the U.S. military in protecting Yellowstone on this short, relaxed walk around Fort Yellowstone. For all ages. Accessible.\nMeet in front of Albright Visitor Center.",
+        "date": "2024-07-27"
+    }]
+}

@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "park_id",
+        "park_description",
+        "park_full_name",
+        "park_image_url"
+    ],
+    "properties": {
+        "park_id": {
+            "title": "The park_id Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "77E0D7F0-1942-494A-ACE2-9004D2BDC59E"
+            ]
+        },
+        "park_description": {
+            "title": "The park_description Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. Visit our country's first memorial to Lincoln, built with donations from young and old, and the site of his childhood home."
+            ]
+        },
+        "park_full_name": {
+            "title": "The park_full_name Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Abraham Lincoln Birthplace National Historical Park"
+            ]
+        },
+        "park_image_url": {
+            "title": "The park_image_url Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "https://www.nps.gov/common/uploads/structured_data/3C86C7EB-1DD8-B71B-0BF2A10341617580.jpg"
+            ]
+        }
+    },
+    "examples": [{
+        "park_id": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
+        "park_description": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. Visit our country's first memorial to Lincoln, built with donations from young and old, and the site of his childhood home.",
+        "park_full_name": "Abraham Lincoln Birthplace National Historical Park",
+        "park_image_url": "https://www.nps.gov/common/uploads/structured_data/3C86C7EB-1DD8-B71B-0BF2A10341617580.jpg"
+    }]
+}

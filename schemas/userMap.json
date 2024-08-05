@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "latitude",
+        "longitude"
+    ],
+    "properties": {
+        "latitude": {
+            "title": "The latitude Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "37.5858662"
+            ]
+        },
+        "longitude": {
+            "title": "The longitude Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "-85.67330523"
+            ]
+        }
+    },
+    "examples": [{
+        "latitude": "37.5858662",
+        "longitude": "-85.67330523"
+    }]
+}

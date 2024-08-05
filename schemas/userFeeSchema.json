@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "array",
+    "default": [],
+    "items": {
+        "title": "A Schema",
+        "type": "object",
+        "default": {},
+        "required": [
+            "title",
+            "cost"
+        ],
+        "properties": {
+            "title": {
+                "title": "The title Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Commercial Entrance - Motor Coach"
+                ]
+            },
+            "cost": {
+                "title": "The cost Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "300.00"
+                ]
+            }
+        },
+        "examples": [{
+            "title": "Commercial Entrance - Motor Coach",
+            "cost": "300.00"
+        }]
+    },
+    "examples": [
+        [{
+            "title": "Commercial Entrance - Motor Coach",
+            "cost": "300.00"
+        }]
+    ]
+}

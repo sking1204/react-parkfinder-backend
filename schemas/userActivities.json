@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "array",
+    "default": [],
+    "items": {
+        "title": "A Schema",
+        "type": "object",
+        "default": {},
+        "required": [
+            "nps_activity_id",
+            "name"
+        ],
+        "properties": {
+            "nps_activity_id": {
+                "title": "The nps_activity_id Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "13A57703-BB1A-41A2-94B8-53B692EB7238"
+                ]
+            },
+            "name": {
+                "title": "The name Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Astronomy"
+                ]
+            }
+        },
+        "examples": [{
+            "nps_activity_id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+            "name": "Astronomy"
+        }]
+    },
+    "examples": [
+        [{
+            "nps_activity_id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+            "name": "Astronomy"
+        }]
+    ]
+}
